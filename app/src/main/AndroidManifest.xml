@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.choose">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="false"
+
+        android:icon="@mipmap/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/appicon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Choose"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config" >
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCLZaqYBkjr_LWO5_YJqASEsjWwb_4pPy0"/>
+        <activity
+            android:name=".intro"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity" android:label="Main 창"/>
+        <activity android:name=".baedal" android:label="배달 메뉴 고르기"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Third" android:label="집 밥 메뉴"/>
+        <activity android:name=".zipbap" android:label="집밥 메뉴 고르기"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".food1" android:label="랜덤 메뉴1"/>
+        <activity android:name=".food2" android:label="랜덤 메뉴2"/>
+        <activity android:name=".food3" android:label="랜덤 메뉴3"/>
+        <activity android:name=".food4" android:label="랜덤 메뉴4"/>
+        <activity android:name=".food5" android:label="랜덤 메뉴5"/>
+        <activity android:name=".food6" android:label="랜덤 메뉴6"/>
+        <activity android:name=".food7" android:label="랜덤 메뉴7"/>
+        <activity android:name=".food8" android:label="랜덤 메뉴8"/>
+        <activity android:name=".food9" android:label="랜덤 메뉴9"/>
+        <activity android:name=".food10" android:label="랜덤 메뉴10"/>
+        <activity android:name=".food11" android:label="랜덤 메뉴11"/>
+        <activity android:name=".food12" android:label="랜덤 메뉴12"/>
+        <activity android:name=".food13" android:label="랜덤 메뉴13"/>
+        <activity android:name=".food14" android:label="랜덤 메뉴14"/>
+        <activity android:name=".food15" android:label="랜덤 메뉴15"/>
+        <activity android:name=".food16" android:label="랜덤 메뉴16"/>
+        <activity android:name=".food17" android:label="랜덤 메뉴17"/>
+        <activity android:name=".food18" android:label="랜덤 메뉴18"/>
+        <activity android:name=".food19" android:label="랜덤 메뉴19"/>
+        <activity android:name=".food20" android:label="랜덤 메뉴20"/>
+
+
+    </application>
+
+</manifest>
